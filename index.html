@@ -1,55 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
+    <title>Meu Portfólio - Eduardo de Souza Santos Thais</title>
     <link rel="stylesheet" href="style.css">
-    <title>Quiz para programadores</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-    
-    <header>
-        <h1>Quiz interativo para programadores</h1>
-        <p>Teste seus conhecimentos em programação...</p>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="Apresentação" class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <img src="Assets/Images/Eduardo.jpg" alt="Foto de Eduardo de Souza Santos Thais" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h1>Olá, Eu Sou Eduardo de Souza Santos Thais</h1>
+            <p class="lead">Desenvolvedor de Jogos e Programador em C#</p>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Sobre esse quiz</h2>
-            <p><strong>Este quiz</strong> foi desenvolvido...</p>
-            <p>Você encontrara... <br> blablabla</p>
-            <p>Texto faltando</p>
-        </section>
-        <section>
-            <h2>pergunta 1:</h2>
-            <form action="">
-                <input type="radio" name="pergunta1" id="p1a" value="Python">
-                <label for="p1a">Python</label><br>
-                <input type="radio" name="pergunta1" id="p1b" value="HTML">
-                <label for="p1b">HTML</label><br>
-                <input type="radio" name="pergunta1" id="p1c" value="Javascript">
-                <label for="p1c">Javascript</label><br>
-                <input type="radio" name="pergunta1" id="p1d" value="Ruby">
-                <label for="p1d">Ruby</label><br>
-            </form>
-        </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
-    <footer></footer>
+    <!-- Sobre Mim Section -->
+    <section class="container py-5" id="sobre">
+        <h2 class="text-center mb-4">Quem Sou</h2>
+        <p>Olá, meu nome é Eduardo de Souza Santos Thais. Sou desenvolvedor com experiência em C#, Java e desenvolvimento de jogos. Tenho interesse em criar jogos e estou sempre buscando aprimorar minhas habilidades em programação.</p>
+    </section>
 
+    <!-- Experiência Section -->
+    <section class="bg-light py-5" id="experiencia">
+        <div class="container">
+            <h2 class="text-center mb-4">Experiência</h2>
+            <ul class="list-unstyled">
+                <li><strong>Desenvolvedor C# .NET:</strong> 2 anos de experiência focado em melhorias e correções de bugs em um sistema da qualidade.</li>
+                <li><strong>Estudo de Programação:</strong> Desde 2017, com foco em Java pelo SENAI.</li>
+                <li><strong>Projeto em Unity:</strong> Criação de um jogo simples para mobile e PC através do curso "Aprenda Unity Pro".</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section class="container py-5" id="projetos">
+        <h2 class="text-center mb-4">Projetos</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="Assets/Images/SpaceShooter.png" class="card-img-top" alt="Imagem do projeto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jogo em Unity</h5>
+                        <p class="card-text">Jogo simples para mobile e PC desenvolvido no curso "Aprenda Unity Pro".</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://masterlink254.itch.io/spaceshooter" class="btn btn-primary">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <!--<div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="caminho-da-imagem2.jpg" class="card-img-top" alt="Imagem do projeto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto [Nome]</h5>
+                        <p class="card-text">Descrição breve sobre o projeto. Pode incluir ferramentas usadas, desafios, etc.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Ver Projeto</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Card 3 -->
+            <!--<div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="caminho-da-imagem3.jpg" class="card-img-top" alt="Imagem do projeto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto [Nome]</h5>
+                        <p class="card-text">Descrição breve sobre o projeto. Pode incluir ferramentas usadas, desafios, etc.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Ver Projeto</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section class="bg-light py-5" id="contato">
+        <div class="container text-center">
+            <h2 class="mb-4">Contato</h2>
+            <p>Email: <a href="mailto:eduardothais.dev@gmail.com">eduardothais.dev@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/eduardo-thais" target="_blank">Meu LinkedIn</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Eduardo de Souza Santos Thais - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
